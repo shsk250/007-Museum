@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  color: gold;
+}
+
+.navbar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: gold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  background: #333;
+}
+
+.hero-banner {
+  overflow: hidden;
+  height: 300px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.welcome {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.exhibit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exhibit-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.exhibit-item h3 {
+  margin-bottom: 0.3rem;
+  color: gold;
+}
+
+.cta-btn, button {
+  padding: 0.8rem 1.5rem;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.cta-btn:hover, button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.gallery .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255,255,255,0.1));
+}
+
+.gallery img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.multimedia video,
+.multimedia audio {
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+}
+
+@media screen and (min-width: 992px) {
+  .text-columns {
+    column-count: 3;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-columns {
+    column-count: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}

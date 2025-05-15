@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>007 Museum – Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">007 MUSEUM</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#exhibits">Exhibits</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero-banner">
+    <img src="images/the-other-fellow-banner.jpg" alt="007 Banner" />
+  </section>
+
+  <section class="welcome">
+    <h1>Welcome to the James Bond 007 Museum</h1>
+    <p>Step into the thrilling world of 007, where espionage meets elegance.</p>
+  </section>
+
+  <section id="exhibits" class="section">
+    <h2>Exhibits</h2>
+    <div class="exhibit-list">
+      <div class="exhibit-item">
+        <img src="images/db5.jpg" alt="Aston Martin DB5" class="exhibit-img" />
+        <h3>Aston Martin DB5</h3>
+        <p>The legendary car from Goldfinger, equipped with ejector seat and rotating license plates.</p>
+      </div>
+      <div class="exhibit-item">
+        <img src="images/walther.jpg" alt="Walther PPK" class="exhibit-img" />
+        <h3>Walther PPK</h3>
+        <p>The iconic sidearm of James Bond, seen in nearly every film since Dr. No.</p>
+      </div>
+      <div class="exhibit-item">
+        <img src="images/seamaster.jpg" alt="Omega Watch" class="exhibit-img" />
+        <h3>Omega Seamaster Watch</h3>
+        <p>Bond’s trusted timepiece, complete with laser cutter and remote detonator in selected films.</p>
+      </div>
+      <div class="exhibit-item">
+        <img src="images/costume.jpg" alt="Villain Costumes" class="exhibit-img" />
+        <h3>Bond Villain Costumes</h3>
+        <p>Original outfits from notorious villains like Goldfinger, Blofeld, and Silva.</p>
+      </div>
+      <div class="exhibit-item">
+        <img src="images/golden-gun.jpg" alt="Golden Gun" class="exhibit-img" />
+        <h3>Golden Gun</h3>
+        <p>The unique weapon from The Man with the Golden Gun, displayed in its original golden form.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section multimedia">
+  <h2>Featured Video & Theme Song</h2>
+
+  <div class="video-wrapper">
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/BIhNsAtPbPI" 
+      title="James Bond Trailer" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <br><br>
+
+  <audio controls>
+    <source src="audio/bond-theme.mp3.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+
+  <section id="tickets" class="section">
+    <h2>Tickets</h2>
+    <p>Purchase your museum tickets online and skip the queue!</p>
+    <button class="cta-btn">Buy Tickets</button>
+  </section>
+
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <img src="images/img1.jpg" />
+      <img src="images/img2.jpg" />
+      <img src="images/img3.jpg" />
+      <img src="images/img4.jpg" />
+      <img src="images/img5.jpg" />
+    </div>
+  </section>
+
+  <section id="location" class="section">
+  <h2>Visit Us in Nybro, Sweden</h2>
+  <p>James Bond 007 Museum, Nybro – the only one of its kind in the world.</p>
+  <div class="map-container">
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8525.237979980367!2d15.89490366615766!3d56.74458637181802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656fc11e64d5a11%3A0xe26aa315961f1b8c!2sJames%20Bond%20007%20Museum!5e0!3m2!1sen!2sse!4v1715773898850!5m2!1sen!2sse" 
+  width="100%" 
+  height="480" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  </div>
+</section>
+
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 James Bond 007 Museum</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
